@@ -3,6 +3,8 @@
 # Makefile for the Linux nfs filesystem routines.
 #
 
+EXTRA_CFLAGS+="-Wno-incompatible-pointer-types"
+
 obj-$(CONFIG_NFS_FS) += nfs.o
 
 CFLAGS_nfstrace.o += -I$(src)
